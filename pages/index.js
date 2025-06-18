@@ -13,18 +13,7 @@ export default function Home() {
       </Head>
 
       {/* NAVBAR */}
-      <nav className={styles.navbar}>
-        <div className={styles.logo}>
-          <Link href="/">AI MED TRAVEL</Link>
-        </div>
-        <ul className={styles.navLinks}>
-          <li><Link href="/providers">Providers</Link></li>
-          <li><Link href="/innovation">Innovation</Link></li>
-          <li><Link href="/articles">Articles</Link></li>
-          <li><Link href="/search">Search</Link></li>
-          <li><Link href="/contact">Contact</Link></li>
-        </ul>
-      </nav>
+     
 
       {/* HERO SECTION */}
       <main className={styles.main}>
