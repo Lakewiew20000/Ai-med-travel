@@ -1,50 +1,26 @@
+// components/Navbar.js
 import Link from 'next/link';
 import Image from 'next/image';
+import styles from '../styles/Navbar.module.css';
 
 export default function Navbar() {
   return (
-    <nav style={styles.nav}>
-      <div style={styles.logoSection}>
+    <nav className={styles.navbar}>
+      <div className={styles.logo}>
         <Link href="/">
-          <Image src="/logo.png" alt="AI Med Travel" width={150} height={40} />
+          <Image src="/ai-med-logo.png" alt="AI Med Travel Logo" width={160} height={40} />
         </Link>
       </div>
-      <div style={styles.links}>
-        <Link href="/articles" style={styles.link}>Articles</Link>
-        <Link href="/providers" style={styles.link}>Providers</Link>
-        <Link href="/innovation" style={styles.link}>Innovation</Link>
-        <Link href="/contact" style={styles.link}>Contact</Link>
-        <Link href="/login" style={styles.link}>Login</Link>
-      </div>
+      <ul className={styles.navLinks}>
+        <li><Link href="/providers">Providers</Link></li>
+        <li><Link href="/innovation">Innovation</Link></li>
+        <li><Link href="/articles">Articles</Link></li>
+        <li><Link href="/search">Search</Link></li>
+        <li><Link href="/contact">Contact</Link></li>
+      </ul>
     </nav>
   );
 }
 
-const styles = {
-  nav: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '1rem 2rem',
-    backgroundColor: '#ffffff',
-    borderBottom: '1px solid #eaeaea',
-    position: 'sticky',
-    top: 0,
-    zIndex: 1000
-  },
-  logoSection: {
-    display: 'flex',
-    alignItems: 'center'
-  },
-  links: {
-    display: 'flex',
-    gap: '1.5rem'
-  },
-  link: {
-    fontWeight: 'bold',
-    color: '#333',
-    textDecoration: 'none'
-  }
-};
 
 
