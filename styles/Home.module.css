@@ -1,49 +1,47 @@
 .container {
-  padding: 0;
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 2rem;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #003366;
-  color: white;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .logo a {
   font-size: 1.5rem;
   font-weight: bold;
-  color: white;
+  color: #0070f3;
   text-decoration: none;
 }
 
 .navLinks {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
-  margin: 0;
+  gap: 1rem;
 }
 
 .navLinks li a {
-  color: white;
+  color: #333;
   text-decoration: none;
   font-weight: 500;
 }
 
 .main {
   text-align: center;
-  padding: 5rem 2rem;
+  padding: 4rem 0;
 }
 
 .title {
+  margin: 0;
   font-size: 3rem;
-  color: #003366;
+  line-height: 1.15;
 }
 
 .description {
   font-size: 1.25rem;
-  color: #333;
+  color: #666;
 }
+
