@@ -15,6 +15,7 @@ const Navbar = () => {
     </nav>
   )
 }
+<img src="/logo.png" alt="AI Med Travel Logo" style={{ height: '40px' }} />
 
 export default Navbar
 
