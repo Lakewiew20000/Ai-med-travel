@@ -1,4 +1,8 @@
-export default function InnovationPage() {
-  return <div>Articles Page Coming Soon</div>;
+export default function Innovation() {
+  return (
+    <div>
+      <h1>AI & Innovation</h1>
+      <p>Discover how artificial intelligence is transforming global healthcare.</p>
+    </div>
+  );
 }
-
