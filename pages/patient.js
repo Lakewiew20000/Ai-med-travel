@@ -1,4 +1,5 @@
-import QuotePreview from import QuotePreview from "../components/QuotePreview";
+import QuotePreview from "../components/QuotePreview";
+
 
 export default function PatientPage() {
   const mockQuote = {
