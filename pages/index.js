@@ -13,6 +13,14 @@ export default function Home() {
         <title>AI Med Travel</title>
         <meta name="description" content="Your gateway to global health, powered by AI" />
         <link rel="icon" href="/favicon.ico" />
+   <Head>
+  <title>AI Med Travel</title>
+  <meta name="description" content="Your gateway to global health, powered by AI" />
+  <link rel="icon" href="/favicon.ico" />
+  {/* ✅ Tailwind CDN */}
+  <script src="https://cdn.tailwindcss.com"></script>
+</Head>
+ 
       </Head>
 
       {/* NAVBAR */}
