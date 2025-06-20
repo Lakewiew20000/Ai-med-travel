@@ -1,10 +1,9 @@
-import TopThreeMatches from "@/components/TopThreeMatches";
-
-
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
+
+import TopThreeMatches from "@/components/TopThreeMatches"; // ✅ import here
 
 export default function Home() {
   return (
@@ -14,17 +13,9 @@ export default function Home() {
         <meta name="description" content="Your gateway to global health, powered by AI" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-  
-export default function MatchPage() {
-  return (
-    <div>
-      <TopThreeMatches />
-    </div>
-  );
-}
 
       {/* NAVBAR */}
-     
+      {/* You can add your navbar here */}
 
       {/* HERO SECTION */}
       <main className={styles.main}>
@@ -32,6 +23,9 @@ export default function MatchPage() {
         <p className={styles.description}>
           Your gateway to global health, powered by AI.
         </p>
+
+        {/* INSERT MATCH CARDS HERE 👇 */}
+        <TopThreeMatches />
       </main>
     </div>
   );
