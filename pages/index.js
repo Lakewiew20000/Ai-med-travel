@@ -2,13 +2,9 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
-
-import TopThreeMatches from "../components/TopThreeMatches";
-
+import TopThreeMatches from '../components/TopThreeMatches';
 
 export default function Home() {
-  return (
-   export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
@@ -19,40 +15,8 @@ export default function Home() {
         <script src="https://cdn.tailwindcss.com"></script>
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to AI Med Travel</h1>
-        <p className={styles.description}>
-          Your gateway to global health, powered by AI.
-        </p>
-
-        {/* ✅ Test Tailwind here */}
-        <div className="bg-blue-500 text-white p-4 rounded-lg">
-          Tailwind is working!
-        </div>
-
-      </main>
-    </div>
-  );
-}
-
-    
-    <div className={styles.container}>
-      <Head>
-        <title>AI Med Travel</title>
-        <meta name="description" content="Your gateway to global health, powered by AI" />
-        <link rel="icon" href="/favicon.ico" />
-   <Head>
-  <title>AI Med Travel</title>
-  <meta name="description" content="Your gateway to global health, powered by AI" />
-  <link rel="icon" href="/favicon.ico" />
-  {/* ✅ Tailwind CDN */}
-  <script src="https://cdn.tailwindcss.com"></script>
-</Head>
- 
-      </Head>
-
       {/* NAVBAR */}
-      {/* You can add your navbar here */}
+      {/* You can insert your navbar here */}
 
       {/* HERO SECTION */}
       <main className={styles.main}>
@@ -61,9 +25,15 @@ export default function Home() {
           Your gateway to global health, powered by AI.
         </p>
 
-        {/* INSERT MATCH CARDS HERE 👇 */}
+        {/* ✅ Tailwind Test Box */}
+        <div className="bg-blue-500 text-white p-4 rounded-lg my-4">
+          Tailwind is working!
+        </div>
+
+        {/* ✅ Top 3 Matches Section */}
         <TopThreeMatches />
       </main>
     </div>
   );
 }
+
