@@ -1,3 +1,6 @@
+import TopThreeMatches from "@/components/TopThreeMatches";
+
+
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -11,6 +14,14 @@ export default function Home() {
         <meta name="description" content="Your gateway to global health, powered by AI" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+  
+export default function MatchPage() {
+  return (
+    <div>
+      <TopThreeMatches />
+    </div>
+  );
+}
 
       {/* NAVBAR */}
      
